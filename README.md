@@ -42,7 +42,8 @@ I have not yet met a any one FM that would well implement console processing (es
 
 Why classic(canonical) method is not good idea? Because:
 1. it limited using the file. Of cause for console we can use terminal (system shell) method. But it is not comfortably.
-2. it is inappropriate use of space
+2. it is inappropriate use of space:
+
 `command      'file1'     "file 2" target`
 But there are few people who write commands like this, using their spaces inappropriately.
 
