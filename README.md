@@ -174,19 +174,19 @@ The second implementation method is to use two or more separate input forms. In 
 
 Non empty method creation forms:
 ```
-:shell command -arg1; command2; > :     file 1‿" '" '1‿../file 3 : file 4    :
+:@shell; command -arg1; command2; > :     file 1‿" '" '1‿../file 3 : file 4    :
 ______________1st form____________ ___________2nd form___________ _3rd form__
 ```
 
 Commands info method creation forms:
 ```
-:shell command -arg1; command2; > :     file 1‿" '" '1‿../file 3 : file 4
+:@shell; command -arg1; command2; > :     file 1‿" '" '1‿../file 3 : file 4
 ______________1st form____________ ___________2nd form___________ _3rd form__
 ```
 
 and vertical version:
 ```
-c:shell command -arg1; command2; > 
+c:@shell; command -arg1; command2; > 
 ______________1st form___________
 
 1:     file 1‿" '" '1‿../file 3
@@ -195,6 +195,8 @@ ___________2nd form___________
 2: file 4
 _3rd form__
 ```
+
+@ (or {@} etc) — use with all (master command)
 
 More complicated implementation compared to other methods.
 Typically, data is specified after the command, but there are complex commands where this is not so. In this case, a data position quantifier is used for the desired command.
