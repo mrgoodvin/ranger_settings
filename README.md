@@ -45,7 +45,8 @@ Why classic(canonical) method is not good idea? Because:
 2. it is inappropriate use of space:
 
 `command      'file1'     "file 2" target`
-But there are few people who write commands like this, using their spaces inappropriately.
+
+But there are few people who write commands like this (more spaces), using their spaces inappropriately.
 
 Yes, if we keep a list of file names with us, we can definitely get the names in any form and time for us. For the console, we can use a clean name. For shell we can wrap in quotation marks.
 What happens when we hit the visible console? We display files if the specified qualifier is %s also we display commands and command-arguments.
