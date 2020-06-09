@@ -172,21 +172,15 @@ This principle is based on the separation of commands and data (file names).
 It can be implemented in different ways. Initially, commands are entered via ";" is entered and a new field is entered data (or empty is for no data). Also can be inputting data initially and next inputting comands. It is used quite rarely, as it is not convenient for fixing errors, and intuitively not convenient, especially for console history.
 The second implementation method is to use two or more separate input forms. In one, commands are entered (via ';') in another data. In comparison with the previous one, this way is used more often, but should include horizontal forms that dynamically change their sizes (no more free forms) or are vertical version. Forms are also created dynamically. Not convenience is that you need to switch between forms, but it will be the advantage (see next). If last form is empty, the next form is no longer created, or forms will be created at the command information or manually.
 
-Non empty method creation forms:
+Creation forms:
 ```
-:@shell; command -arg1; command2; > :     file 1‿" '" '1‿../file 3 : file 4    :
-______________1st form____________ ___________2nd form___________ _3rd form__
-```
-
-Commands info method creation forms:
-```
-:@shell; command -arg1; command2; > :     file 1‿" '" '1‿../file 3 : file 4
+:@shell; command -arg1; command2 > :     file 1‿" '" '1‿../file 3 : file 4    :
 ______________1st form____________ ___________2nd form___________ _3rd form__
 ```
 
 and vertical version:
 ```
-c:@shell; command -arg1; command2; > 
+c:@shell; command -arg1; command2 > 
 ______________1st form___________
 
 1:     file 1‿" '" '1‿../file 3
@@ -194,6 +188,18 @@ ___________2nd form___________
 
 2: file 4
 _3rd form__
+```
+
+Simple command with double Enter:
+```
+:mark_tag :
+____1st___ _2nd_
+```
+
+Simple command with double Enter and data:
+```
+:mkdir : dir1
+__1st__ _2nd_
 ```
 
 @ (or {@} etc) — use with all (master command)
